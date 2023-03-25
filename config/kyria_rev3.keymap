@@ -31,19 +31,17 @@
 
 		lower {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   +  |
-// |  TAB  |  @  |  "  |  #   |  $   |  %   |                                          |  &   |  {    |  (    |  )   |   }   |   '  |
-// | SHIFT |  <  |  >  |  \   |  *   |  -   | L SHIFT | RAISE |  | RAISE | L SHIFT |  PIPE    |  ~    |  ,    |  .   |   -   | SHIFT|
+// |  ESC  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   =/+  |
+// |  TAB  |  @  |  "  |  #   |  $   |  %   |                                          |  LEFT   |  DOWN  |  UP  |  RIGHT   |   }   |   '  |
+// | SHIFT |  <  |  >  |  \   |  *   |  -   | L SHIFT | RAISE |  | RAISE | PIPE |  {    |  [    |  (    |  ~   |   -   | SHIFT|
 //                     | CTRL  | ALT  | CMD  |  SPACE  |   LOWER   |  |   LOWER   |  RET  | BSPC  | DEL  | R-ALT |
 			bindings = <
-	&trans   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                           &kp N6 &kp N7  &kp N8  &kp N9  &kp N0   &kp PLUS
-	&trans   &kp AT &kp DQT &kp HASH &kp DLLR &kp PRCNT                                     &kp AMPS  &kp LBRC  &kp LPAR             &kp RPAR &kp RBRC  &kp SQT
-	&trans   &kp LT &kp GT &kp BSLH &kp ASTRK &kp MINUS &kp LSHFT &trans           &trans &kp LSHFT &kp PIPE2 &kp GRAVE  &kp COMMA &kp DOT  &kp MINUS &trans
+	&trans   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                           &kp N6 &kp N7  &kp N8  &kp N9  &kp N0   &kp EQUAL
+	&trans   &kp AT &kp DQT &kp HASH &kp DLLR &kp PRCNT                                   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp RBRC  &kp SQT
+	&trans   &kp LT &kp GT &kp BSLH &kp ASTRK &kp MINUS &kp LSHFT &trans           &trans &kp PIPE2 &kp LBRC &kp LBKT  &kp LPAR &kp TILDE  &kp MINUS &trans
 	            	     	 &trans &trans &trans &trans &trans        &trans  &trans  &trans &trans &trans
 			>;
-
 		};
-
 	};
 };
 
