@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
 #define LOWER	1
@@ -51,8 +52,8 @@
 // | SHIFT |  <  |  >  |  \   |  *   |  -   | L SHIFT | RAISE |  | RAISE | PIPE |  {   |  [    |  (    |  ~   |   -   | SHIFT|
 //                     | CTRL  | ALT  | CMD  |  SPACE  |   LOWER   |  |   LOWER   |  RET  | BSPC  | DEL  | R-ALT |
 			bindings = <
-	&trans   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                           &kp N6 &kp N7  &kp N8  &kp N9  &kp N0   &kp EQUAL
-	&trans   &kp AT &kp DQT &kp HASH &kp DLLR &kp PRCNT                                   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp SEMI  &kp SQT
+	&trans   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &kp N6 &kp N7  &kp N8  &kp N9  &kp N0   &kp EQUAL
+	&trans   &kp AT &kp DQT &kp HASH &kp DLLR &kp PRCNT                                   &bt BT_PRV &kp DOWN  &kp UP   &bt BT_NXT &kp SEMI  &kp SQT
 	&trans   &kp LT &kp GT &kp BSLH &kp ASTRK &kp MINUS &kp LSHFT &trans           &trans &kp PIPE2 &kp LBRC &kp LBKT  &kp LPAR &kp TILDE  &kp MINUS &trans
 	            	     	 &trans &trans &trans &trans &trans        &trans  &trans  &trans &trans &trans
 			>;
