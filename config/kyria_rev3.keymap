@@ -67,8 +67,8 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | RAISE |  			| RAISE | L SHIFT |  N   |  M    |  ,    |  .   |   /?   | SHIFT |
 //                     | CTRL  | ALT  | CMD  |  SPACE  |   LOWER   |    |   LOWER   |  RET  | BSPC  | DEL  | R-ALT |
 			bindings = <
-	&trans &trans &trans &trans &trans &trans                                                   &trans &trans &trans &trans &trans          &kp SE_A_RING
-	&trans &trans &trans &trans &trans &trans                                                   &trans &trans &trans &trans &kp SE_O_UMLAUT &kp SE_A_UMLAUT
+	&trans &trans &trans &trans &trans &trans                                                   &trans &trans &trans &trans &trans          &kp SE_OA
+	&trans &trans &trans &trans &trans &trans                                                   &trans &trans &trans &trans &kp SE_OE  		&kp SE_AE
 	&trans &trans &trans &trans &trans &trans &tog SWEDISH &mo RAISE        &mo RAISE  &trans   &trans &trans &trans &trans &trans          &trans
 	            	     	 &trans &trans &trans &trans &trans             &trans     &trans   &trans &trans &trans
 			>;
