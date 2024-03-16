@@ -14,6 +14,38 @@
 #define RAISE	2
 #define SWEDISH 3
 / {
+	macros {
+  		linux_bt: linux_bt {
+			label = "mac_bt";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+			= <&macro_tap &bt BT_SEL 0>
+			, <&macro_tap &tog 0>
+			;
+		};
+  
+		mac_bt: mac_bt {
+			label = "win_bt";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+			= <&macro_tap &bt BT_SEL 1>
+			, <&macro_tap &tog 1>
+			;
+		};
+
+		win_bt: win_bt {
+			label = "mac_bt";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+			= <&macro_tap &bt BT_SEL 2>
+			, <&macro_tap &tog 0>
+			;
+		};
+	};
+
 	keymap {
 		compatible = "zmk,keymap";
 
