@@ -8,10 +8,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define DEFAULT 0
-#define LOWER	1
-#define RAISE	2
-#define SWEDISH 3
+#define default_layer 0
+#define symbols	1
+#define navigation	2
+#define bluetooth 3
 
 / {
     keymap {
@@ -47,7 +47,7 @@
             >;
         };
 
-        nav {
+        navigation {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   =/+  |
             // |  TAB  |  @  |  "  |  #   |  $   |  %   |                                          |  LEFT   |  DOWN  |  UP  |  RIGHT   |   ;/:   |   '  |
@@ -62,7 +62,7 @@
             >;
         };
 
-        bt {
+        bluetooth {
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                  &trans      &trans          &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans                                        &trans      &trans          &trans  &trans  &trans  &trans
